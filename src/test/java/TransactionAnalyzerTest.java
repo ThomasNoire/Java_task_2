@@ -10,8 +10,8 @@ class TransactionAnalyzerTest {
     public void testCalculateTotalBalance() {
         // Створення тестових даних
         Transaction transaction1 = new Transaction("2023-01-01", 100.0, "Дохід");
-        Transaction transaction2 = new Transaction("2023-01-02", -50.0, "Витрата");
-        Transaction transaction3 = new Transaction("2023-01-03", 150.0, "Дохід");
+        Transaction transaction2 = new Transaction("2023-15-02", -50.0, "Витрата");
+        Transaction transaction3 = new Transaction("2023-05-03", 150.0, "Дохід");
         List<Transaction> transactions = Arrays.asList(transaction1, transaction2, transaction3);
 
         // Виклик статичного методу

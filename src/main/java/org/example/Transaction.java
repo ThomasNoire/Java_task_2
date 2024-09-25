@@ -12,8 +12,6 @@ public class Transaction {
     private String description;
 
 
-
-    // toString method for convenience
     @Override
     public String toString() {
         return "Transaction{" +
