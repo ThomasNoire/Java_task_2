@@ -27,6 +27,7 @@ public abstract class TransactionCSVReader {
                         System.err.println("Invalid line format: " + line);
                     }
                 }
+
             }
         } catch (IOException e) {
             e.printStackTrace();
