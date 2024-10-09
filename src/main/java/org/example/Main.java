@@ -1,3 +1,4 @@
+
 package dut.pd3.practics.practic_2.FinanceAnalyzer;
 
 import org.example.Transaction;
