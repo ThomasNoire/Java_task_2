@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         String filePath = "https://informer.com.ua/dut/java/pr2.csv";
 
-        // Читання транзакцій з CSV файлу
+        // Читаємо транзакції з CSV файлу
         List<Transaction> transactions = TransactionCSVReader.readTransactions(filePath);
 
         // Підрахунок загального балансу

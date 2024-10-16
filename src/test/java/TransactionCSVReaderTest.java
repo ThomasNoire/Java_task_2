@@ -8,6 +8,7 @@ import java.util.List;
 public class TransactionCSVReaderTest {
 
     @Test
+    // перевіряє, чи список транзакцій не null і не пустий.
     public void testReadTransactions() {
         String filePath = "https://informer.com.ua/dut/java/pr2.csv";
         List<Transaction> transactions = TransactionCSVReader.readTransactions(filePath);
@@ -17,11 +18,11 @@ public class TransactionCSVReaderTest {
     }
 
     @Test
+// перевіряє, що список топ 10 витрат не null, містить 10 елементів і всі транзакції мають від'ємну суму
     public void testTop10Expenses() {
         String filePath = "https://informer.com.ua/dut/java/pr2.csv";
         List<Transaction> transactions = TransactionCSVReader.readTransactions(filePath);
 
-        // Виклик статичного методу без створення екземпляру
         List<Transaction> top10Expenses = TransactionReportGenerator.getTop10Expenses(transactions);
 
         assertNotNull(top10Expenses, "Список топ 10 витрат не повинен бути null");
