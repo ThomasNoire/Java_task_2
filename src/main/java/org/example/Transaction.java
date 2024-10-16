@@ -21,7 +21,6 @@ package org.example;
 //                '}';
 //    }
 //}
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import java.time.LocalDate;
@@ -36,7 +35,7 @@ public class Transaction {
 
     // Метод для перетворення дати з рядка у LocalDate
     public LocalDate getParsedDate() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy"); // Формат DD-MM-YYYY
         return LocalDate.parse(date, formatter);
     }
 
